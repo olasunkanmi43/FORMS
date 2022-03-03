@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form">
+        <a href="/">Patient Registration</a> 
+        <a href="/movie">Movie Registration</a>
+        <a href="/property">Property Registration</a>
+        <hr>
+        <h3>Patient Registration Form</h3>
+        <p>Please Kindly fill in the form field below to know more about the property</p>
+
+        <form action="/property" method="post">
+            <p>Firstname: <input type="text" name="fn" placeholder="Firstname"></p>
+            <p>Lastname: <input type="text" name="ln" placeholder="Lastname"></p>
+            <p>Gender: Male <input type="radio" name="sex" value="Male">
+                       Female <input type="radio" name="sex" value="Male"></p>
+            <p>Email: <input type="text" name="email"></p>
+            <p>Phone: <input type="text" name="phone"></p>
+            <p>Marital Status: <select name="status">
+                <option value="single">Single</option>
+                <option value="marriage">Marriage</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select></p>
+            <p>Location: <select name="location">
+                <option value="ocean view">Ocean View</option>
+                <option value="beachfront">Beachfront</option>
+                <option value="near surf">Near Surf</option>
+                <option value="in town">In Town</option>
+                <option value="farm or ranch">Farm or Ranch</option>
+                <option value="other">Other</option>
+                <option value="does not matter">Does Not Matter</option>
+            </select></p>
+            <p>Budget: <select name="budget">
+                <option value="#200,000">#200,000</option>
+                <option value="#450,000">#450,000</option>
+                <option value="#700,000">#700,000</option>
+                <option value="#1,000,000">#1,000,000</option>
+                <option value="#2,500,000">#2,500,000</option>
+                <option value="#4,000,000">#4,000,000</option>
+                <option value="does not matter">Does Not Matter</option>
+            </select></p>
+            <p>Address: <br><textarea name="address" rows="10" cols="25"></textarea></p>
+            <p>Questions: <br><textarea name="questions" rows="10" cols="25"></textarea></p>
+            <p>Date Register: <input type="date" name="date" value="date"></p>
+            <button type="submit">Submit</button>
+    
+    </div>
+</body>
+</html>

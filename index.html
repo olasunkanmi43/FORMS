@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form</title>
+    
+</head>
+<body>
+        <div class="form">
+            <a href="/">Patient Registration</a> 
+            <a href="/movie">Movie Registration</a>
+            <a href="/property">Property Registration</a>
+            <hr>
+        
+        <h3>Patient Registration Form</h3>
+        <p>Please Kindly fill in the form field below</p>
+
+        <form action="/" method="post">
+            <p>Firstname: <input type="text" name="fn" placeholder="Firstname"></p>
+            <p>Lastname: <input type="text" name="ln" placeholder="Lastname"></p>
+            <p>Gender: Male <input type="radio" name="sex" value="Male">
+                       Female <input type="radio" name="sex" value="Male"></p>
+            <p>Email: <input type="text" name="email"></p>
+            <p>Phone: <input type="text" name="phone"></p>
+            <p>Marital Status: <select name="status">
+                <option value="single">Single</option>
+                <option value="marriage">Marriage</option>
+                <option value="divorced">Divorced</option>
+                <option value="widowed">Widowed</option>
+            </select></p>
+            <p>Blood Group: <select name="blood">
+                <option value="A+">A+</option>
+                <option value="0+">0+</option>
+                <option value="B+">B+</option>
+                <option value="AB+">AB+</option>
+                <option value="A-">A-</option>
+                <option value="0-">0-</option>
+                <option value="B-">B-</option>
+                <option value="AB-">AB-</option>
+            </select></p>
+            <p>Genotype: <select name="type">
+                <option value="AA">AA</option>
+                <option value="A0">A0</option>
+                <option value="BB">BB</option>
+                <option value="B0">B0</option>
+                <option value="AB">AB</option>
+                <option value="00">00</option>
+            </select></p>
+<p>Address: <br><textarea name="address" rows="10" cols="25"></textarea></p>
+<p>Date Register: <input type="date" name="date" value="date"></p>
+<button type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>

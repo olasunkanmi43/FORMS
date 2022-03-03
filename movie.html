@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Registration Form</title>
+</head>
+<body>
+    <div class="form">
+        <a href="/">Patient Registration</a> 
+        <a href="/movie">Movie Registration</a>
+        <a href="/property">Property Registration</a>
+        <hr>
+    <h3>Movie Registration Form</h3>
+    <p>Please Kindly fill in the form field below</p>
+
+    <form action="/movie" method="post">
+        <p>Title: <input type="text" name="ti"></p>
+        <p>Producer: <input type="text" name="pro"></p>
+        <p>Director: <input type="text" name="dir"></p>
+        <p>Writer: <input type="text" name="wri"></p>
+        <p>Genre: <select name="genre">
+            <option value="drama">Drama</option>
+            <option value="action">Action</option>
+            <option value="horror">Horror</option>
+            <option value="comedy+">Comedy+</option>
+            <option value="thriller">Thriller</option>
+            <option value="science fiction">Science Fiction</option>
+            <option value="romance">Romance</option>
+            <option value="crime">Crime</option>
+            <option value="adventure">Adventure</option>
+        </select></p>
+        <p>Review: <br><textarea name="review" rows="10" cols="25"></textarea></p>
+        <p>Year Release: <input type="date" name="date" value="date"></p>
+        <button type="submit">Submit</button>
+    </form>
+
+    </div>
+</body>
+</html>
